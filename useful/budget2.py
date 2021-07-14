@@ -47,6 +47,8 @@ print('Price of unit is ' + str(price))
 logging.debug("price: " + str(price))
 #Remove $ for budget calculations
 budget = price[1:]
+if "," in budget:
+    budget = budget.replace(',', '')
 budget = float(budget)
 logging.debug("budget: " + str(budget))
 logging.debug("Is deck == M? " + str(deck == 'M'))
