@@ -4,7 +4,7 @@
 
 import csv, os
 
-os.makedir('headerRemoved', exist_ok=True)
+os.makedirs('headerRemoved', exist_ok=True)
 
 #Loop through every file in the current working directory.
 
